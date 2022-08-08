@@ -90,12 +90,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css", 
+              "node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
+              "node_modules/font/css/fontawesome.min.css",
+              "node_modules/font/css/all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",           
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/font/js/fontawesome.min.js",
+              "node_modules/font/js/all.js"
+
+    
+
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "cbdf7ffe-9041-4584-bff2-3f65a7a84d91"
   }
 }
