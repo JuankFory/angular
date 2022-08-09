@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiService } from 'src/app/servicio/api/api.service';
+
+
+
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +12,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  //datos:ApiService[]=[];
+  datos:any;
+
+  constructor(public api:ApiService ) { }
 
   ngOnInit(): void {
+    this.api.getDatos().subscribe
+    (
+        (r)=>{this.datos=r; console.log(r)},
+        
+        (e)=>{console.error(e)}
+       
+    )
+       
+  
+    
   }
+
+ 
 
 }
